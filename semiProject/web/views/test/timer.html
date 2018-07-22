@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type=text id=txt_temp value=1>
+<script>
+var t = setInterval(mmm, 1000);
+function mmm()
+{
+       txt_temp.value = txt_temp.value*1 + 1;
+       if(txt_temp.value % 5 == 0)
+       		document.getElementById("testword").style.display = "block";
+       else
+    	   document.getElementById("testword").style.display = "none";
+}
+</script>
+<div id="testword">
+	<table border="1">
+		<tr><td>번호</td><td>내용</td><td>설명</td></tr>
+		<tr><td>1</td><td>1</td><td>1</td></tr>
+		<tr><td>2</td><td>2</td><td>2</td></tr>
+		<tr><td>3</td><td>3</td><td>3</td></tr>
+		<tr><td>4</td><td>4</td><td>4</td></tr>
+	</table>
+</div>
+</body>
+</html>
